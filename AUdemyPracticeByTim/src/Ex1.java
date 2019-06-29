@@ -1,38 +1,34 @@
-import java.util.Random;
-
 public class Ex1 {
 
     public static void main(String[] ars) {
 
-        String s = "java2s".replace('a', 'Z').trim().concat("Aa");
-        s.substring(0, 2);
-        System.out.println(s);
+        Ex2.phoneNumber();
 
-//Write a program that creates and prints a random phone number of the form XXX-XXX-XXXX.
-//Include the dashes in the output. Do not let the first three digits contain an 8 or 9 ,
-// the second set of three digits is no greater than 742.
-        Random rand = new Random();
-        int first = rand.nextInt(8);
-        int second = rand.nextInt(8);
-        int third = rand.nextInt(8);
-        int middle = rand.nextInt(742);
-        int last = rand.nextInt(9999);
-        String middleString;
-        String lastString;
 
-        middleString = Integer.toString(middle);
-        lastString = Integer.toString(last);
+        boolean gameOver = true;
+        int score = 800;
+        int levelCompleted = 5;
+        int bonus = 100;
 
-        while (middleString.length() < 3) {
-            middleString = "0" + middleString;
+        if (gameOver) {
+            int finalScore = score + (levelCompleted + bonus);
+            finalScore += 1000;
+            System.out.println("Your final score was: " + finalScore);
         }
-        while (lastString.length() < 4) {
-            lastString = "0" + lastString;
+
+        score = 1000;
+        levelCompleted = 8;
+
+        bonus = 200;
+
+        if (gameOver) {
+            int finalScore = score + (levelCompleted + bonus);
+            System.out.println("Your final score was " + finalScore);
+
 
         }
-        System.out.println(Integer.toString(first) + Integer.toString(second) + Integer.toString(second) + "-" + middle + "-" + last);
+
     }
-
 
 }
 
