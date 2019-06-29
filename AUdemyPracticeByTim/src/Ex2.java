@@ -8,9 +8,11 @@ public class Ex2 {
         s.substring(0, 2);
         System.out.println("Noul substring este: " + s);
 
-//Write a program that creates and prints a random phone number of the form XXX-XXX-XXXX.
-//Include the dashes in the output. Do not let the first three digits contain an 8 or 9 ,
-// the second set of three digits is no greater than 742.
+        System.out.println("--------------------------------");
+
+        //Write a program that creates and prints a random phone number of the form XXX-XXX-XXXX.
+        //Include the dashes in the output. Do not let the first three digits contain an 8 or 9 ,
+        // the second set of three digits is no greater than 742.
         Random rand = new Random();
         int first = rand.nextInt(8);
         int second = rand.nextInt(8);
@@ -31,5 +33,9 @@ public class Ex2 {
 
         }
         System.out.println("Noul numar de telefon generat random este: " + Integer.toString(first) + Integer.toString(second) + Integer.toString(second) + "-" + middle + "-" + last);
+
+        System.out.println("--------------------------------");
+
+
     }
 }
