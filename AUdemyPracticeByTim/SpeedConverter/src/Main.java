@@ -4,8 +4,16 @@ public class Main {
         System.out.println("Miles = " + miles);
         SpeedConverter.printConversion(10);
 
+//---------------------------------------------------
+
         MegaBytesConverter.printMegaBytesAndKiloBytes(5000);
 
+        //----------------------------------
+
+        System.out.println(BarkingDog.shouldWakeUp(true, 1));
+        System.out.println(BarkingDog.shouldWakeUp(false, 2));
+        System.out.println(BarkingDog.shouldWakeUp(true, 8));
+        System.out.println(BarkingDog.shouldWakeUp(true, -1));
 
     }
 }
