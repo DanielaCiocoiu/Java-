@@ -27,10 +27,33 @@ public class Main {
 //        System.out.println(Duration.getDurationString(-45));
 //        System.out.println(Duration.getDurationString(65,9));
 // -----------------------------------
-        System.out.println(Area.areaCircle(5.0));
-        System.out.println(Area.areaCircle(-1));
-        System.out.println(Area.areaRect(5.0, 4.0));
-        System.out.println(Area.areaRect(-1.0, 4.0));
+//        System.out.println(Area.areaCircle(5.0));
+//        System.out.println(Area.areaCircle(-1));
+//        System.out.println(Area.areaRect(5.0, 4.0));
+//        System.out.println(Area.areaRect(-1.0, 4.0));
+// -----------------------------------
+
+        Duration.printYearsAndDays(525600);
+
+
+           Duration.Sum();
+
+
+
+
+
+
+          Duration.sumOdd(1, 100);
+
+//            * sumOdd(-1, 100); →  should return -1
+//
+//            * sumOdd(100, 100); → should return 0
+//
+//            * sumOdd(13, 13); → should return 13 (This set contains one number, 13, and it is odd)
+//
+//            * sumOdd(100, -100); → should return -1
+//
+//            * sumOdd(100, 1000); → should return 247500
 
 
 
@@ -38,11 +61,5 @@ public class Main {
 
 
 
-
-
-
-
-
-    }
-}
+}}
 
