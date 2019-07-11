@@ -55,6 +55,12 @@ public class Main {
 //
 //            * sumOdd(100, 1000); → should return 247500
 
+Cat d = new Tomi();
+d.miau();
+Tomi e = new Tomi();
+e.miau();
+Tomi e1 = new Cat();
+e1.miau();
 
 
 
