@@ -59,12 +59,8 @@ Cat d = new Tomi();
 d.miau();
 Tomi e = new Tomi();
 e.miau();
-Tomi e1 = new Cat();
-e1.miau();
-
-
-
-
+//Tomi e1 = new Cat();
+//e1.miau();
 
 
 }}
