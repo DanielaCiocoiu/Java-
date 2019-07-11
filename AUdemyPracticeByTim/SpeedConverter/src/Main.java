@@ -36,14 +36,10 @@ public class Main {
         Duration.printYearsAndDays(525600);
 
 
-           Duration.Sum();
+        Duration.Sum();
 
 
-
-
-
-
-          Duration.sumOdd(1, 100);
+        Duration.sumOdd(1, 100);
 
 //            * sumOdd(-1, 100); →  should return -1
 //
@@ -55,13 +51,20 @@ public class Main {
 //
 //            * sumOdd(100, 1000); → should return 247500
 
-Cat d = new Tomi();
-d.miau();
-Tomi e = new Tomi();
-e.miau();
+        Cat d = new Tomi();
+        d.miau();
+        Tomi e = new Tomi();
+        e.miau();
 //Tomi e1 = new Cat();
 //e1.miau();
 
+        System.out.println(d.add("5"));
+        System.out.println(  d.add(5));
+        System.out.println(d.addFloat(11f, 55f));
+        System.out.println( d.add(1, 3));
 
-}}
+
+
+    }
+}
 
