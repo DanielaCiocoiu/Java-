@@ -59,9 +59,34 @@ public class Main {
 //e1.miau();
 
         System.out.println(d.add("5"));
-        System.out.println(  d.add(5));
+        System.out.println(d.add(5));
         System.out.println(d.addFloat(11f, 55f));
-        System.out.println( d.add(1, 3));
+        System.out.println(d.add(1, 3));
+
+        String[] peopleNames = new String[5];
+        peopleNames[0] = "Ana";
+        peopleNames[1] = "Maia";
+        peopleNames[2] = "Nae";
+        peopleNames[3] = "Bob";
+
+        try {
+            System.out.println(peopleNames.toString());
+        } catch (ArrayIndexOutOfBoundsException a) {
+            System.out.println("Exceed array bounds");
+        } finally {
+            System.out.println("Successful");
+        }
+        Emp a = new Emp("a", "b", "1700");
+        Emp b = new Emp("a", "b", "1700");
+        System.out.println(a==b);
+        System.out.println(a.equals(b));
+
+
+
+
+
+
+
 
 
 
